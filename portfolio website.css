@@ -13,7 +13,10 @@ scroll-behavior: smooth;
 list-style: none;
 background-color: #d082a3;
 height: 10vh;
+width: 100%;
 justify-content: right;
+position: fixed;
+z-index: 1;
 
 }
 
@@ -38,13 +41,14 @@ justify-content: right;
  background-image: url(images/pic7.svg);
  color: aqua;
  background-size: cover;
- height: 90vh;
+ height: 100vh;
  padding: 0;
  margin: 0;
  display: flex;
  flex-direction: column;
  justify-content: center;
  align-items: center;
+
 
 }
 /* these color has been use */
@@ -198,13 +202,17 @@ animation: colorchange1 2s linear infinite ;
     
 }
 
+.work div a img{
+    opacity: 0.6;
+}
+
 .work span{
     animation: colorchange5 2s linear infinite ;
 }
 
 @keyframes colorchange5{
     from{color: blue;}
-    to{color: aqua;}
+    to{color: red;}
 }
 
 .mywork-content{
@@ -220,6 +228,7 @@ animation: colorchange1 2s linear infinite ;
     border-right: none;
     font-family: 'Courier New';
     font-weight: 500;
+
 }
 
 .work span{
@@ -236,6 +245,7 @@ animation: colorchange1 2s linear infinite ;
     color: black;
     border-radius: 10px;
 border: none;
+
 }
 
 .button{
